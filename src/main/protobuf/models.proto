@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+// Brought in from scalapb-runtime
+import "scalapb/scalapb.proto";
+import "google/protobuf/wrappers.proto";
+
+package sample.remote;
+
+message Added {
+
+    int32 nbr1 = 1;
+    int32 nbr2 = 2;
+}
+
+message Subtracted {
+    int32 nbr1 = 1;
+    int32 nbr2 = 2;
+}
+
+message AddedResult {
+    int32 nbr1 = 1;
+    int32 nbr2 = 2;
+    int32 result = 3;
+}
+
+message SubtractedResult {
+    int32 nbr1 = 1;
+    int32 nbr2 = 2;
+    int32 result = 3;
+}
